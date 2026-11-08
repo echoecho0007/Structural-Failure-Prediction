@@ -1,0 +1,9 @@
+{
+  "n_drawn": 120000,
+  "n_accepted_total": 34085,
+  "acceptance_rate": 0.2840416666666667,
+  "n_kept": 30000,
+  "seed": 42,
+  "class_balance_yield_exceeded": 0.1898,
+  "validation": "passed"
+}

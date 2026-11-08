@@ -1,0 +1,24 @@
+{
+  "exponents": {
+    "max_stress_Pa": {
+      "length_m": 1.000000000000001,
+      "width_m": -0.9999999999999976,
+      "thickness_m": -1.9999999999999971,
+      "force_N": 1.0000000000000013,
+      "youngs_modulus_Pa": -4.1729488240622054e-16,
+      "yield_strength_Pa": -5.958983349024413e-17
+    },
+    "tip_deflection_m": {
+      "length_m": 3.0000000000000324,
+      "width_m": -1.00000000000001,
+      "thickness_m": -3.0000000000000324,
+      "force_N": 1.0000000000000149,
+      "youngs_modulus_Pa": -1.000000000000013,
+      "yield_strength_Pa": 1.6953802346560724e-16
+    }
+  },
+  "intercepts_log10": {
+    "max_stress_Pa": 0.7781512503836483,
+    "tip_deflection_m": 0.602059991327996
+  }
+}
