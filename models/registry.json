@@ -1,0 +1,48 @@
+{
+  "backends": {
+    "boosting": "sklearn-hgb",
+    "mlp": "sklearn-mlp"
+  },
+  "features": [
+    "length_m",
+    "width_m",
+    "thickness_m",
+    "force_N",
+    "youngs_modulus_Pa",
+    "yield_strength_Pa"
+  ],
+  "reg_targets": [
+    "max_stress_Pa",
+    "tip_deflection_m"
+  ],
+  "target_transform": "log10",
+  "files": {
+    "random_forest": "models/random_forest/rf_regressor.joblib",
+    "boosting": [
+      "models/xgboost/sklearn-hgb_max_stress_Pa.joblib",
+      "models/xgboost/sklearn-hgb_tip_deflection_m.joblib"
+    ],
+    "neural_network": "models/neural_network/mlp_regressor.joblib",
+    "nn_scalers": "models/neural_network/scalers.joblib",
+    "mlp_raw_features": "models/baselines/mlp_raw_features.joblib",
+    "mlp_raw_scalers": "models/baselines/mlp_raw_scalers.joblib",
+    "power_law_baseline": "models/baselines/power_law.joblib",
+    "classifiers": {
+      "random_forest": "models/random_forest/rf_classifier.joblib",
+      "boosting": "models/xgboost/sklearn-hgb_classifier.joblib",
+      "neural_network": "models/neural_network/mlp_classifier.joblib"
+    }
+  },
+  "classifier_val_f1": {
+    "random_forest": 0.8768472906403941,
+    "boosting": 0.9430604982206405,
+    "neural_network": 0.9876688197298884
+  },
+  "train_seconds": {
+    "random_forest": 17.7,
+    "boosting": 41.7,
+    "neural_network": 151.3,
+    "mlp_raw_features": 34.4
+  },
+  "fast_mode": false
+}

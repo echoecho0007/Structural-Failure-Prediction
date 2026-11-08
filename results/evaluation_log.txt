@@ -1,0 +1,14 @@
+        model_label           target          MAE         RMSE       R2  median_APE_%    P95_APE_%
+      Random Forest    max_stress_Pa 1.369529e+07 2.267897e+07 0.968690  6.081292e+00 2.203978e+01
+      Random Forest tip_deflection_m 2.996444e-03 4.969221e-03 0.936143  1.060784e+01 3.583326e+01
+      HistGradBoost    max_stress_Pa 4.789432e+06 7.658549e+06 0.996429  2.184329e+00 7.709414e+00
+      HistGradBoost tip_deflection_m 1.137535e-03 1.908828e-03 0.990578  4.000735e+00 1.431152e+01
+      MLP (sklearn)    max_stress_Pa 1.582455e+05 2.352457e+05 0.999997  8.017128e-02 2.658641e-01
+      MLP (sklearn) tip_deflection_m 2.872222e-05 4.867143e-05 0.999994  9.493714e-02 2.939948e-01
+Power-law (log-OLS)    max_stress_Pa 7.129829e-07 9.978896e-07 1.000000  4.169368e-13 9.030248e-13
+Power-law (log-OLS) tip_deflection_m 1.998567e-16 3.385254e-16 1.000000  6.781259e-13 1.987750e-12
+   MLP (raw inputs)    max_stress_Pa 1.943451e+06 2.992317e+06 0.999455  8.817295e-01 4.902966e+00
+   MLP (raw inputs) tip_deflection_m 3.545876e-04 7.045796e-04 0.998716  1.195646e+00 5.155320e+00
+Classification F1: {'random_forest': 0.865, 'boosting': 0.9253, 'neural_network': 0.9877, 'derived_random_forest': 0.9138, 'derived_boosting': 0.9747, 'derived_neural_network': 0.9994, 'derived_power_law_baseline': 1.0, 'derived_mlp_raw_features': 0.9865, 'derived_from_best_regressor': 0.9994}
+OOD stress median APE %: {'random_forest': 26.04, 'boosting': 19.54, 'neural_network': 0.26, 'power_law_baseline': 0.0}
+Evaluation finished in 87.3s

@@ -1,0 +1,194 @@
+{
+  "baseline": {
+    "length_m": 1.0,
+    "width_m": 0.05,
+    "thickness_m": 0.04,
+    "force_N": 2000.0,
+    "youngs_modulus_Pa": 200000000000.0,
+    "yield_strength_Pa": 250000000.0
+  },
+  "sweeps": {
+    "force_N->max_stress_Pa": {
+      "exact_exponent": 1.0,
+      "valid_fraction_of_sweep": 0.7916666666666666,
+      "models": {
+        "random_forest": {
+          "loglog_slope": 0.9764837735472353,
+          "slope_error": -0.023516226452764744,
+          "fraction_steps_correct_sign": 0.9787234042553191,
+          "max_rel_error_%": 44.3378048547321,
+          "mean_rel_error_%": 5.325957202014133
+        },
+        "boosting": {
+          "loglog_slope": 0.9699005006771262,
+          "slope_error": -0.030099499322873813,
+          "fraction_steps_correct_sign": 0.9361702127659575,
+          "max_rel_error_%": 18.135507801675814,
+          "mean_rel_error_%": 2.891315361729689
+        },
+        "neural_network": {
+          "loglog_slope": 0.9996173226574829,
+          "slope_error": -0.0003826773425170682,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.37741069662932003,
+          "mean_rel_error_%": 0.10066331960132732
+        }
+      }
+    },
+    "thickness_m->max_stress_Pa": {
+      "exact_exponent": -2.0,
+      "valid_fraction_of_sweep": 0.6166666666666667,
+      "models": {
+        "random_forest": {
+          "loglog_slope": -1.662665037820043,
+          "slope_error": 0.33733496217995707,
+          "fraction_steps_correct_sign": 0.9315068493150684,
+          "max_rel_error_%": 23.654848742738437,
+          "mean_rel_error_%": 5.562561483977528
+        },
+        "boosting": {
+          "loglog_slope": -1.9096733530087573,
+          "slope_error": 0.09032664699124271,
+          "fraction_steps_correct_sign": 0.9178082191780822,
+          "max_rel_error_%": 6.281437851973528,
+          "mean_rel_error_%": 2.1644701770962635
+        },
+        "neural_network": {
+          "loglog_slope": -1.999436051528323,
+          "slope_error": 0.0005639484716770671,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.22826930073125865,
+          "mean_rel_error_%": 0.06786452390846061
+        }
+      }
+    },
+    "width_m->max_stress_Pa": {
+      "exact_exponent": -1.0,
+      "valid_fraction_of_sweep": 1.0,
+      "models": {
+        "random_forest": {
+          "loglog_slope": -0.8329982359014231,
+          "slope_error": 0.16700176409857692,
+          "fraction_steps_correct_sign": 0.907563025210084,
+          "max_rel_error_%": 30.0709562099711,
+          "mean_rel_error_%": 5.555194461547659
+        },
+        "boosting": {
+          "loglog_slope": -1.011198279823106,
+          "slope_error": -0.011198279823106061,
+          "fraction_steps_correct_sign": 0.8739495798319328,
+          "max_rel_error_%": 6.088727372005391,
+          "mean_rel_error_%": 1.6391517917814074
+        },
+        "neural_network": {
+          "loglog_slope": -1.0005130643243285,
+          "slope_error": -0.000513064324328516,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.23234680173122094,
+          "mean_rel_error_%": 0.06965988191230559
+        }
+      }
+    },
+    "length_m->tip_deflection_m": {
+      "exact_exponent": 3.0,
+      "valid_fraction_of_sweep": 1.0,
+      "models": {
+        "random_forest": {
+          "loglog_slope": 2.945910678404491,
+          "slope_error": -0.054089321595509166,
+          "fraction_steps_correct_sign": 0.8907563025210085,
+          "max_rel_error_%": 28.88815374664117,
+          "mean_rel_error_%": 9.396512269670149
+        },
+        "boosting": {
+          "loglog_slope": 3.017489941776766,
+          "slope_error": 0.017489941776766216,
+          "fraction_steps_correct_sign": 0.9159663865546218,
+          "max_rel_error_%": 14.279537775529045,
+          "mean_rel_error_%": 2.8352703246023614
+        },
+        "neural_network": {
+          "loglog_slope": 2.9984959995080116,
+          "slope_error": -0.0015040004919883998,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.35949128914383627,
+          "mean_rel_error_%": 0.09805004105872081
+        }
+      }
+    },
+    "youngs_modulus_Pa->tip_deflection_m": {
+      "exact_exponent": -1.0,
+      "valid_fraction_of_sweep": 1.0,
+      "models": {
+        "random_forest": {
+          "loglog_slope": -0.736416132401884,
+          "slope_error": 0.26358386759811603,
+          "fraction_steps_correct_sign": 0.6974789915966386,
+          "max_rel_error_%": 35.956924246772886,
+          "mean_rel_error_%": 11.813251789317809
+        },
+        "boosting": {
+          "loglog_slope": -0.9970802302713091,
+          "slope_error": 0.002919769728690902,
+          "fraction_steps_correct_sign": 0.773109243697479,
+          "max_rel_error_%": 15.148700892696867,
+          "mean_rel_error_%": 7.528189374572164
+        },
+        "neural_network": {
+          "loglog_slope": -0.9965818093183154,
+          "slope_error": 0.0034181906816845853,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.3784951417380362,
+          "mean_rel_error_%": 0.13352360336744992
+        }
+      }
+    },
+    "yield_strength_Pa->factor_of_safety": {
+      "exact_exponent": 1.0,
+      "valid_fraction_of_sweep": 1.0,
+      "models": {
+        "random_forest": {
+          "loglog_slope": 1.0031482979091633,
+          "slope_error": 0.003148297909163267,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 6.785482615816695,
+          "mean_rel_error_%": 6.334515896027621
+        },
+        "boosting": {
+          "loglog_slope": 0.9948914343406684,
+          "slope_error": -0.005108565659331599,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 1.5390494946458995,
+          "mean_rel_error_%": 0.9756204876917878
+        },
+        "neural_network": {
+          "loglog_slope": 0.9997747928503818,
+          "slope_error": -0.00022520714961815624,
+          "fraction_steps_correct_sign": 1.0,
+          "max_rel_error_%": 0.08954609137943105,
+          "mean_rel_error_%": 0.0444046456562887
+        }
+      }
+    }
+  },
+  "log_variance_shares": {
+    "max_stress_Pa": {
+      "length_m": -0.03991083016507233,
+      "width_m": 0.07133262619701065,
+      "thickness_m": 0.0024493750972721475,
+      "force_N": 0.9661288288707893,
+      "youngs_modulus_Pa": 0.0,
+      "yield_strength_Pa": 0.0,
+      "_sum": 0.9999999999999998
+    },
+    "tip_deflection_m": {
+      "length_m": 0.5858212412576986,
+      "width_m": 0.0162783455528757,
+      "thickness_m": 0.061140920834786124,
+      "force_N": 0.32440180633788146,
+      "youngs_modulus_Pa": 0.01235768601674656,
+      "yield_strength_Pa": 0.0,
+      "_sum": 0.9999999999999885
+    }
+  }
+}

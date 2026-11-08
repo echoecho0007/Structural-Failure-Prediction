@@ -1,0 +1,29 @@
+{
+  "backend": "sklearn-hgb",
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 31
+  },
+  "tuning": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31,
+      "val_rmse_log10": 0.025310055611368266
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 63,
+      "val_rmse_log10": 0.02730926280344293
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 31,
+      "val_rmse_log10": 0.02678012797650508
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 63,
+      "val_rmse_log10": 0.02977131107402481
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "best_params": {
+    "max_features": 1.0,
+    "min_samples_leaf": 2
+  },
+  "tuning": [
+    {
+      "max_features": 1.0,
+      "min_samples_leaf": 2,
+      "val_rmse_log10": 0.061713786701582826
+    },
+    {
+      "max_features": 1.0,
+      "min_samples_leaf": 4,
+      "val_rmse_log10": 0.06694490998427646
+    },
+    {
+      "max_features": 0.6,
+      "min_samples_leaf": 2,
+      "val_rmse_log10": 0.06436129114318825
+    },
+    {
+      "max_features": 0.6,
+      "min_samples_leaf": 4,
+      "val_rmse_log10": 0.07016753035385045
+    }
+  ]
+}
